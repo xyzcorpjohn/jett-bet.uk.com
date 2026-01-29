@@ -176,7 +176,7 @@
     box-sizing: border-box;
   }
   
-  /* Links */
+
   a, a:link, a:visited {
     cursor: pointer;
     text-decoration: none;
@@ -188,13 +188,13 @@
     cursor: pointer;
   }
   
-  /* Common */
+
   aside, nav, footer, header, section, main {
     display: block;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    /* font-size: inherit; */
+
     font-weight: inherit;
     font-family: "Russo One", sans-serif;
   }
@@ -221,7 +221,7 @@
     font-style: normal;
   }
   
-  /* Form */
+
   input, textarea, button, select {
     font-family: inherit;
     font-size: inherit;
@@ -259,7 +259,7 @@
     display: block;
   }
   
-  /* HOVER */
+  
   .header__block_button {
     transition: 0.4s ease;
   }
@@ -295,9 +295,7 @@
     max-width: 1160px;
     padding: 9px 0px;
     max-height: 56px;
-    /*     button {
-            display: none;
-        } */
+
   }
   .header__block svg {
     position: relative;
@@ -308,14 +306,14 @@
     height: 55px;
   }
   .header__block_nav {
-    /*  margin-left: 390px; */
+
     font-size: 15px;
     text-transform: uppercase;
   }
   .header__block_nav ul {
     display: flex;
     gap: 35px;
-    /*             margin-left: 100px; */
+  
   }
   .header__block_nav ul li {
     padding: 2px;
@@ -339,22 +337,20 @@
     background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
     letter-spacing: 0.6px;
     font-size: 12px;
-    /*   height: 40px; */
-    padding: 6px 28px; /* тільки по боках */
+
+    padding: 6px 28px; 
     box-sizing: border-box;
     display: inline-flex;
-    align-items: center; /* центр по вертикалі */
-    justify-content: center; /* центр по горизонталі */
+    align-items: center; 
+    justify-content: center; 
     max-width: 345px;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 900;
     background-size: 150% 150%;
     text-align: center;
-    /*   font-family: fantasy; */
     font-style: italic;
     box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-    /* мобілка — щоб не ламались */
   }
   .header__block_button:hover {
     filter: brightness(1.1) saturate(1.15);
@@ -383,99 +379,6 @@
     display: none;
   }
   
-  /* language */
-  .btn-plus-language {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  }
-  .btn-plus-language .language {
-    position: relative;
-    cursor: pointer;
-    padding: 2px;
-  }
-  .btn-plus-language .language .drop-down-menu {
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    display: none;
-    background: white;
-    border-radius: 6px;
-    padding: 4px;
-    z-index: 100;
-  }
-  .btn-plus-language .language .drop-down-menu .drop-down {
-    /* padding: 5px 10px; */
-    transition: background 0.2s ease;
-  }
-  .btn-plus-language .language .drop-down-menu .drop-down:hover {
-    background-image: linear-gradient(90deg, #FFC556 0%, #FFA60D 100%);
-  }
-  .btn-plus-language .language .drop-down-menu .active-lang {
-    background-image: linear-gradient(90deg, #FFC556 0%, #FFA60D 100%);
-  }
-  .btn-plus-language .language .drop-down {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    padding: 5px 8px;
-    border-radius: 6px;
-    color: #000000;
-  }
-  .btn-plus-language .language .drop-down img {
-    max-width: 25px;
-    max-height: 25px;
-    border-radius: 50%;
-  }
-  .btn-plus-language .language .drop-down:hover {
-    background-color: gold;
-    transition: background 0.2s ease;
-  }
-  .btn-plus-language .language .drop-down2 {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    padding: 5px 8px;
-    border-radius: 6px;
-    color: #000000;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  .btn-plus-language .language .drop-down2 img {
-    max-width: 18px;
-    max-height: 18px;
-    border-radius: 50%;
-  }
-  .btn-plus-language .language .drop-down2::after {
-    content: "";
-    display: inline-block;
-    margin-left: 6px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 5px 0 5px;
-    border-color: currentColor transparent transparent transparent;
-  }
-  .btn-plus-language .language .drop-down2:hover {
-    background-image: linear-gradient(90deg, #FFC556 0%, #FFA60D 100%);
-  }
-  .btn-plus-language .language .drop-down2:focus-visible {
-    outline: 2px solid rgba(0, 0, 0, 0.2);
-    outline-offset: 2px;
-  }
-  .btn-plus-language .language:hover .drop-down-menu {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    min-width: 127px;
-  }
-  
-  .language2 {
-    display: none;
-  }
-  
-  /* -----------------------------------*/
-  /*--- MEDIA ---*/
   @media (max-width: 1010px) {
     .header__block {
       margin-left: 0px;
@@ -587,22 +490,20 @@
       background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
       letter-spacing: 0.6px;
       font-size: 12px;
-      /*   height: 40px; */
-      padding: 6px 28px; /* тільки по боках */
+
+      padding: 6px 28px; 
       box-sizing: border-box;
       display: inline-flex;
-      align-items: center; /* центр по вертикалі */
-      justify-content: center; /* центр по горизонталі */
+      align-items: center; 
+      justify-content: center; 
       max-width: 345px;
       border-radius: 12px;
       cursor: pointer;
       font-weight: 900;
       background-size: 150% 150%;
       text-align: center;
-      /*   font-family: fantasy; */
       font-style: italic;
       box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-      /* мобілка — щоб не ламались */
     }
     .header__block .header__block_mobnav .play-now:hover {
       filter: brightness(1.1) saturate(1.15);
@@ -755,22 +656,22 @@
     background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
     letter-spacing: 0.6px;
     font-size: 12px;
-    /*   height: 40px; */
-    padding: 6px 28px; /* тільки по боках */
+
+    padding: 6px 28px; 
     box-sizing: border-box;
     display: inline-flex;
-    align-items: center; /* центр по вертикалі */
-    justify-content: center; /* центр по горизонталі */
+    align-items: center; 
+    justify-content: center; 
     max-width: 345px;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 900;
     background-size: 150% 150%;
     text-align: center;
-    /*   font-family: fantasy; */
+   
     font-style: italic;
     box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-    /* мобілка — щоб не ламались */
+
     text-align: center;
     color: #000 !important;
   }
@@ -797,22 +698,19 @@
     background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
     letter-spacing: 0.6px;
     font-size: 12px;
-    /*   height: 40px; */
-    padding: 6px 28px; /* тільки по боках */
+    padding: 6px 28px;
     box-sizing: border-box;
     display: inline-flex;
-    align-items: center; /* центр по вертикалі */
-    justify-content: center; /* центр по горизонталі */
+    align-items: center; 
+    justify-content: center; 
     max-width: 345px;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 900;
     background-size: 150% 150%;
     text-align: center;
-    /*   font-family: fantasy; */
     font-style: italic;
     box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-    /* мобілка — щоб не ламались */
     background-image: linear-gradient(180deg, #1c1b6b 0%, #060235 55%);
     color: #ffed4f !important;
     border: 2px solid rgba(137, 198, 255, 0.8549019608);
@@ -840,7 +738,7 @@
   }
   @media (max-width: 510px) {
     .header-btn-1 {
-      /*         flex-direction: column; */
+
       white-space: nowrap;
     }
     .header-btn-1-1 {
@@ -864,22 +762,21 @@
     background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
     letter-spacing: 0.6px;
     font-size: 12px;
-    /*   height: 40px; */
-    padding: 6px 28px; /* тільки по боках */
+    padding: 6px 28px; 
     box-sizing: border-box;
     display: inline-flex;
-    align-items: center; /* центр по вертикалі */
-    justify-content: center; /* центр по горизонталі */
+    align-items: center; 
+    justify-content: center; 
     max-width: 345px;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 900;
     background-size: 150% 150%;
     text-align: center;
-    /*   font-family: fantasy; */
+
     font-style: italic;
     box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-    /* мобілка — щоб не ламались */
+
     font-size: 20px;
     padding: 12px 30px;
   }
@@ -903,22 +800,20 @@
     background: linear-gradient(180deg, #ffe822 0%, #ffb300 100%);
     letter-spacing: 0.6px;
     font-size: 12px;
-    /*   height: 40px; */
-    padding: 6px 28px; /* тільки по боках */
+
+    padding: 6px 28px; 
     box-sizing: border-box;
     display: inline-flex;
-    align-items: center; /* центр по вертикалі */
-    justify-content: center; /* центр по горизонталі */
+    align-items: center;
+    justify-content: center; 
     max-width: 345px;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 900;
     background-size: 150% 150%;
     text-align: center;
-    /*   font-family: fantasy; */
     font-style: italic;
     box-shadow: inset 0 -4px 0 rgba(255, 115, 0, 0.6666666667), inset 0 2px 6px rgba(255, 255, 255, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-    /* мобілка — щоб не ламались */
     font-size: 22px;
     background: linear-gradient(135deg, #feeec1 0%, #ffdaf4 40%, #ffacdb 100%);
     color: #000 !important;
@@ -940,12 +835,8 @@
     }
   }
   
-  /* Layout vars */
-  /* Container */
   .container {
     max-width: 1200px;
-    /*     margin: 0 auto;  */
-    /* padding-inline: $pad-d; */
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -956,9 +847,7 @@
       padding-inline: 1px;
     }
   }
-  
-  /* OFFERS where to play */
-  /* Grid wrapper (можеш обгорнути кілька карток) */
+
   .offers {
     padding: 12px 0;
     display: grid;
@@ -969,28 +858,23 @@
   }
   @media (max-width: 768px) {
     .offers h2 {
-      /* font-size: 25px; */
+
       line-height: 1;
       text-align: center;
     }
   }
   
-  /* Card */
   .offer-card {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 1px 4px rgba(79, 63, 25, 0.422), 0 1px 5px rgba(96, 26, 84, 0.327);
     display: grid;
-    grid-template-columns: 110px 180px 1fr 1fr 160px; /* logo | brand | promo | perks | CTA */
+    grid-template-columns: 110px 180px 1fr 1fr 160px; 
     align-items: center;
     gap: 18px;
     padding: 14px;
     color: #0f172a;
-    /* LOGO */
-    /* BRAND + RATING */
-    /* PROMO box */
-    /* PERKS */
-    /* CTA */
+
   }
   @media (max-width: 1024px) {
     .offer-card {
@@ -1140,7 +1024,7 @@
     }
   }
   
-  /* Button */
+ 
   .btn-cta {
     display: inline-flex;
     align-items: center;
@@ -1172,7 +1056,7 @@
     }
   }
   
-  /* Notice row */
+
   .offer-card__notice {
     grid-column: -2/1;
     color: #6b7280;
@@ -1187,7 +1071,7 @@
     }
   }
   
-  /* Toggle row */
+
   .offer-card__toggle {
     grid-column: -2/-1;
     grid-row: 2;
@@ -1216,7 +1100,7 @@
     }
   }
   
-  /* Expandable */
+
   .offer-card__more {
     grid-column: 1/-1;
     overflow: hidden;
@@ -1232,7 +1116,7 @@
     }
   }
   
-  /* Card spacing in mobile */
+ 
   @media (max-width: 640px) {
     .offer-card {
       padding: 14px 18px;
@@ -1241,19 +1125,17 @@
       width: 100%;
     }
   }
-  /* new */
-  /* === FIX: offer-card__more незалежний від гріда картки === */
-  /* повна ширина під карткою, жодного центрування, власний grid */
+
   .offers .offer-card > .offer-card__more {
     grid-column: 1/-1 !important;
-    /* display: grid !important;  */
+ 
     justify-content: stretch !important;
     align-items: start !important;
     width: 100% !important;
     border-top: 2px solid #e4e4e4;
     padding-top: 12px;
     gap: 33px;
-    /* внутрішня сітка: 3 колонки на десктопі */
+  
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   @media (max-width: 640px) {
@@ -1263,62 +1145,56 @@
     }
   }
   
-  /* гарантія: елемент реально прихований, коли стоїть hidden */
+
   [hidden] {
     display: none !important;
   }
   
-  /* ===== MOBILE FIX: одна колонка, без «порожньої секції» праворуч ===== */
   @media (max-width: 640px) {
-    /* картка — одна колонка */
     .offer-card {
       grid-template-columns: 1fr !important;
     }
-    /* УСІ прямі діти картки займають повну ширину (жодних -2/-1) */
     .offer-card > * {
       grid-column: 1/-1 !important;
       text-align: center;
       align-items: center;
       align-self: center;
     }
-    /* toggle/notice теж на всю ширину (на випадок старих правил) */
     .offer-card__toggle,
     .offer-card__notice {
       grid-column: 1/-1 !important;
     }
   }
-  /* ===== expandable — незалежний прямокутний блок на всю ширину ===== */
   .offer-card__more {
-    grid-column: 1/-1 !important; /* на весь ряд батьківської сітки */
+    grid-column: 1/-1 !important; 
     width: 100% !important;
     box-sizing: border-box;
     border-top: 1px solid #e5e7eb;
     padding-top: 12px;
-    /* власна внутрішня сітка: 3 колонки десктоп / 1 колонка мобільний */
-    display: grid !important; /* перекриває будь-який flex */
+  
+    display: grid !important; 
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
-    /* щоб контент не стискався дивно */
+
   }
   @media (max-width: 640px) {
     .offer-card__more {
-      grid-template-columns: 1fr; /* ТУТ головне — повна ширина */
+      grid-template-columns: 1fr; 
     }
   }
   .offer-card__more > * {
     min-width: 0;
   }
   
-  /* гарантія: hidden справді ховає блок */
+
   [hidden] {
     display: none !important;
   }
   
-  /* === Fix order: CTA вище, Show more нижче === */
-  /* скидуємо примусове розміщення рядків */
+
   .offer-card__toggle {
     grid-column: 1/0 !important;
-    grid-row: auto !important; /* було 2 — через це підскакувало вище CTA */
+    grid-row: auto !important; 
     justify-content: flex-end;
   }
   @media (max-width: 640px) {
@@ -1327,14 +1203,13 @@
     }
   }
   
-  /* про всяк випадок — теж ставимо авто */
   .offer-card__cta,
   .offer-card__notice,
   .offer-card__more {
     grid-row: auto !important;
   }
   
-  /* мобільний: усе йде в DOM-порядку (CTA → notice → Show more → more) */
+
   @media (max-width: 640px) {
     .offer-card {
       grid-template-columns: 1fr !important;
@@ -1343,7 +1218,7 @@
       grid-column: 1/-1 !important;
     }
   }
-  /* Expandable */
+
   .offer-card__more {
     grid-column: 1/-1;
     overflow: hidden;
@@ -1425,7 +1300,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* justify-content: center; */
   }
   .offer-card__more_2 ul li img {
     width: auto;
@@ -1434,7 +1308,6 @@
        object-fit: contain;
     flex: 0 0 22px;
     display: block;
-    /* padding: 3px; */
     border-top: 1px solid rgba(128, 128, 128, 0.2549019608);
     border-bottom: 1px solid rgba(128, 128, 128, 0.2549019608);
   }
@@ -1474,19 +1347,7 @@
     font-weight: 700;
   }
   
-  /* logo */
-  /* .logo-desktop {
-      @media (max-width: 515px) {
-          display: none;
-      }
-  }
-  .logo-mobile {
-      display: none;
-      @media (max-width: 515px) {
-          display: block;
-      }
-  } */
-  /* HOVER */
+
   .s1__block_one-btn a,
   .s3__block_btn a,
   .s4__block_btn a {
@@ -1548,7 +1409,6 @@
   .s1 {
     width: 100vw;
     margin-left: calc(-1 * (100vw - 100%) / 2);
-/*     background: url("/img/gamblezencasino-main.webp") center/cover no-repeat; */
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -1556,17 +1416,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    /*     &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100vw; 
-            height: 100px; 
-            background: linear-gradient(to top, #0000009e 0%, rgba(0, 0, 0, 0) 100%);
-            pointer-events: none;
-            z-index: 2;
-        } */
+
   }
   .s1::before {
     content: "";
@@ -1580,7 +1430,6 @@
     max-width: 1200px;
     width: 100%;
     height: 100%;
-    /*     max-height: 495px; */
     margin: 0 auto;
     display: flex;
     padding: 0 20px;
@@ -1613,7 +1462,6 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    /*         margin-bottom: 50px; */
   }
   .s1__block-1_text p {
     font-size: 20px;
@@ -1739,12 +1587,10 @@
       margin-bottom: 30px;
     }
     .s1__block-1_text p {
-      /*                 font-size: 18px; */
       font-weight: normal;
     }
     .s1__block-1_text .buttons a {
       padding: 14px 45px;
-      /*                     display: none; */
     }
     .s1__block-1_text .ages {
       gap: 10px;
@@ -1756,7 +1602,6 @@
       min-width: 100%;
     }
   }
-  /* banner */
   .s1__banner {
     display: flex;
     gap: 24px;
@@ -1812,7 +1657,6 @@
   }
   @media (max-width: 420px) {
     .s1__banner_s2 {
-      /*             padding: 15px; */
     }
     .s1__banner_s2_img {
       gap: 0;
@@ -1848,7 +1692,6 @@
   @media (max-width: 768px) {
     .s4__block-1_img {
       width: 100vw;
-      /*             margin-left: calc(-1 * (100vw - 100%) / 2); */
     }
   }
   @media (max-width: 620px) {
@@ -1873,9 +1716,7 @@
       margin-left: 0%;
     }
   }
-  /*--- MEDIA ---*/
-  /* ********************************************** */
-  /* section 1 */
+
   @media (max-width: 1035px) {
     h1 {
       font-size: 26px;
@@ -2051,345 +1892,7 @@
     }
   }
   
-  /* SECTION 2 */
-  .s2 {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-  }
-  
-  .s2__inner-1 {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  
-  hr {
-    height: 2px;
-    width: 100%;
-    background: orange;
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0.08) 0%, orange 50%, rgba(255, 0, 0, 0.08) 100%);
-  }
-  
-  .s2__block-1 {
-    display: flex;
-    gap: 15px;
-  }
-  .s2__block-1_img {
-    display: flex;
-    flex: 0.6;
-    max-height: 223px;
-    justify-content: center;
-    align-items: center;
-  }
-  .s2__block-1_text {
-    display: flex;
-    gap: 11px;
-    flex-direction: column;
-    align-self: center;
-    flex: 1;
-  }
-  
-  @media (max-width: 630px) {
-    .s2__block-1 {
-      flex-direction: column;
-    }
-    .s2__block-1_img {
-      order: 1;
-    }
-  }
-  /* SECTION 33 */
-  .s33 {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-  }
-  
-  .s33__inner-2 {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-  }
-  .s33__inner-2 h3 {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .testimonials {
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  .testimonials blockquote {
-    position: relative;
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-    background: #cad4ff;
-    border-left: 4px solid #2200ff;
-    border-radius: 8px;
-    font-style: italic;
-    color: #444;
-  }
-  .testimonials blockquote::before {
-    content: "“";
-    font-size: 3rem;
-    color: #0094ff;
-    position: absolute;
-    left: 10px;
-    top: -10px;
-  }
-  .testimonials blockquote cite {
-    display: block;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: #666;
-    font-style: normal;
-    text-align: right;
-  }
-  
-  .s33__inner {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-  }
-  
-  .s33-btn {
-    align-self: center;
-  }
-  
-  .s33__block_img {
-    align-self: center;
-  }
-  
-  .s33__inner-3 {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  .s33__inner-3 .final-verdict {
-    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
-    border-left: 5px solid #ff7300;
-    border-radius: 8px;
-    padding: 1.5rem 1.25rem;
-    margin: 1rem 0;
-    color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(255, 110, 101, 0.1);
-  }
-  .s33__inner-3 .final-verdict p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-    font-weight: 500;
-    position: relative;
-    padding-left: 1.2rem;
-  }
-  .s33__inner-3 .final-verdict p::before {
-    content: "★";
-    position: absolute;
-    left: 0;
-    color: #ff6e65;
-    font-size: 1.2rem;
-    top: 0.1rem;
-  }
-  @media (max-width: 768px) {
-    .s33__inner-3 .final-verdict {
-      padding: 0.9rem;
-    }
-    .s33__inner-3 .final-verdict p {
-      font-size: 0.95rem;
-    }
-  }
-  .s33__inner-3 ul {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-  }
-  .s33__inner-3 ul li {
-    padding: 10px;
-    border-radius: 8px;
-    background-color: rgba(255, 123, 0, 0.289);
-  }
-  
-  @media (max-width: 630px) {
-    .testimonials {
-      padding: 0 0.5rem;
-    }
-  }
-  @media (max-width: 768px) {
-    .s33__block_img {
-      width: 100vw;
-      /* margin-left: calc(-1 * (100vw - 100%) / 2); */
-    }
-  }
-  @media (max-width: 560px) {
-    .s33 {
-      gap: 20px;
-    }
-  }
-  /* SECTION 44 */
-  .s44 {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-  }
-  
-  .s44__blick_foot {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    background: #ffffff;
-    border-top: 1px solid #e4eef3;
-  }
-  .s44__blick_foot .blick-item {
-    flex: 1 1 33.333%;
-    text-align: center;
-    background: linear-gradient(135deg, #aed8f4, #ffffff);
-    border-left: 1px solid #dce9f1;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-    transition: background 0.3s ease;
-  }
-  .s44__blick_foot .blick-item:hover {
-    background: #f1faff;
-  }
-  
-  .s44__block_list ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.7rem;
-    padding: 0.5rem;
-    border-radius: 12px;
-    list-style: none;
-    margin: 0;
-    position: relative;
-    background: #843333;
-    background: linear-gradient(0deg, rgb(218, 66, 66) 0%, rgb(228, 155, 155) 47%, rgb(182, 67, 67) 100%);
-  }
-  .s44__block_list ul li {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    background: #232323;
-    padding: 1rem;
-    text-align: center;
-    color: #e5e5e5;
-    font-weight: 500;
-    z-index: 1;
-  }
-  @media (max-width: 768px) {
-    .s44__block_list ul {
-      flex-direction: column;
-    }
-  }
-  
-  .s44__block_text {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  
-  /* --------------------------------------- */
-  /* App page */
-  /* SECTION 1-2 */
-  .s1-2 {
-    width: 100vw;
-    margin-left: calc(-1 * (100vw - 100%) / 2);
-    background: url("/img/2-3.webp") center/cover no-repeat;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    padding: 30px 0;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-  .s1-2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-  .s1-2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 120px;
-    background: linear-gradient(to top, #181a1d 0%, rgba(0, 0, 0, 0) 100%);
-    pointer-events: none;
-    z-index: 2;
-  }
-  
-  .s1-2__inner {
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    min-height: 495px;
-    margin: 0 auto;
-    display: flex;
-    padding: 0 20px;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    color: #ffffff;
-  }
-  
-  .h1-color {
-    background-color: #5faaff;
-    color: #181a1d;
-  }
-  
-  @media (max-width: 745px) {
-    .s1-2__inner {
-      gap: 20px;
-    }
-  }
-  @media (max-width: 620px) {
-    .s1-2 {
-      padding-bottom: 0;
-    }
-    .s1-2::after {
-      height: 50px;
-    }
-  }
-  @media (max-width: 530px) {
-    .s1-2 {
-      padding-top: 20px;
-    }
-    .s1-2::after {
-      height: 0;
-    }
-  }
-  @media (max-width: 450px) {
-    .s1-2__inner {
-      gap: 10px;
-      padding: 0 10px;
-    }
-  }
-  .s1-2__block-1-2 {
-    background: linear-gradient(to bottom, rgba(219, 23, 206, 0.6980392157), rgba(0, 0, 0, 0.1764705882));
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    max-width: 500px;
-  }
-  
+
   .s5__block_title {
     display: flex;
     gap: 10px;
@@ -4561,7 +4064,7 @@
   }
   
   body {
-    background-color: #170206;
+    background-color: #100205;
     color: #fff;
     display: flex;
     flex-direction: column;
